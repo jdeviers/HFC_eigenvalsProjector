@@ -1,0 +1,8 @@
+To represent and visualise the distrib of whole tensors, project them onto the average principal axes. These are averages of the internal eigenbasis generated during diagonalisation. For atoms approaching isotropy, clustering algorithms might be necessary.
+
+Method:
+ * Read in whole tensors, diagonalise them, save the eigenvectors.
+ * Check eigenvectors are reasonably consistent. Maybe use clustering to identify 3 (internal and not necessarily ortho) basis vectors.
+ * Geom sum and renormalise these 3 internal axes to obtain the (internal) x,y,z average principal axes.
+ * Project the whole tensor onto each of these axes.
+ * Plot histograms of the projections on axis 1, 2, and 3.
